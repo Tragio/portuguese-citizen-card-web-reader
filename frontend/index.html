@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Read Citizen Card | Tragio Quievera</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    />
+    <style>
+      html {
+        font-size: 1rem;
+        padding: 2rem;
+      }
+      pre {
+        padding: 2rem;
+      }
+    </style>
+    <script src="main.js"></script>
+  </head>
+
+  <body>
+    <div class="section container">
+      <div style="margin-bottom: 2rem">
+        <button class="button" onclick="runChain()">Run Complete Chain</button>
+        <button class="secondary" onclick="pluginIsAlive()">
+          Plugin isAlive
+        </button>
+        <button class="secondary" onclick="readRequest()">Read Request</button>
+        <button class="secondary" onclick="pluginReadRequest()">
+          Plugin Read Request
+        </button>
+        <button class="secondary" onclick="readDelivery()">
+          Read Delivery
+        </button>
+      </div>
+
+      <div id="finalData" style="display: none; margin-bottom: 2rem">
+        <h3>Final Data</h3>
+        <div class="grid">
+          <pre id="ccDataDisplay"></pre>
+          <article><img id="photoDisplay" /></article>
+        </div>
+        <hr />
+      </div>
+
+      <div id="responses" style="display: none">
+        <h3>Responses Log</h3>
+      </div>
+
+      <footer style="text-align: center">
+        <a href="https://tragio.pt" target="_blank" rel="noopener noreferrer">
+          Made with ❤️ by Tragio Quievera
+        </a>
+      </footer>
+    </div>
+  </body>
+</html>
