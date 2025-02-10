@@ -38,7 +38,7 @@ ciphers = Ciphers(settings.KEY_STORE_PATH, settings.KEY_STORE_PASSWORD)
 
 
 @app.post("/read/request", response_model=ReadResponse)
-async def read_request(request: ReadRequest) -> ReadResponse:
+def read_request(request: ReadRequest) -> ReadResponse:
     try:
         # Get agent token
         agent_token = request.agent
@@ -70,7 +70,7 @@ async def read_request(request: ReadRequest) -> ReadResponse:
 
 
 @app.post("/read/delivery", response_model=DeliveryResponse)
-async def read_delivery(request: DeliveryRequest) -> DeliveryResponse:
+def read_delivery(request: DeliveryRequest) -> DeliveryResponse:
     try:
         # Make type checker happy
         if not isinstance(ciphers.private_key, rsa.RSAPrivateKey):
