@@ -2,8 +2,7 @@
 
 A Python-based web application that allows reading data from Portuguese Citizen Cards (Cartão de Cidadão) using the official Autenticação.gov plugin.
 
-Read more about this project and the technical details in my blog:
-https://tragio.pt/articles/how-to-read-portuguese-citizen-cards-in-web-applications
+Read more about this project and the technical details in my [blog](https://tragio.pt/articles/how-to-read-portuguese-citizen-cards-in-web-applications).
 
 ## Features
 
@@ -68,4 +67,4 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 If you find this project useful and you are in the mood, feel free to offer me a coffee:
 
-<a href="https://www.buymeacoffee.com/tragio" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
+<a href="https://www.buymeacoffee.com/tragio" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 40px !important;width: auto;" ></a>
